@@ -24,3 +24,190 @@ body{
   h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
+nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  display:flex ;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--negro2);
+
+}
+.logo i {
+  color:  var(--blanco);
+  font-size: 2rem;
+}
+.logo img{
+  width: 40%;
+  max-width: 180px;
+}
+.menu{
+  background-color: rgba(1, 10, 52, 0.838);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.menu-hr{
+  background-color:  var(--blanco);
+  width: 90%;
+}
+
+.item{
+  padding: 1rem;
+}
+
+nav a{
+  color: var(--blanco);
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Marcellus', serif;
+  font-size: 1.3em;
+}
+nav a:hover{
+  background-color: #0B3860;
+  width: 100%;
+}
+.boton{
+  background-color: transparent;
+  border:none;
+  border-radius:3px;
+  font-size: 1em;
+  padding: 0.5rem;
+  font-family:'Marcellus', serif; /* cambio de fuente */
+  color: var(--blanco);
+}
+
+/* resulocion pantalla tablet*/
+@media screen and (min-width:768px){}
+  
+
+@media screen and (min-width:1024px){
+  nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--negro2);
+  }
+  .menu{
+    background-color: var(--negro2);
+    display: block;
+  }
+  .logo i{
+    display: none;
+  }
+  .menu-hr{
+    display: none;
+  }
+  .buton{
+    background-color: var(--azulclaro);
+
+  }
+}
+
+/* barra de navegacion 
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--negro2);
+  font-family: 'Marcellus', serif;
+  font-size: 1.3em;
+  padding: 1rem;
+}
+.item{
+    padding:  1rem;
+}
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+}
+.logo img{
+  height: 3rem;
+}
+.boton{
+  background-color: var(--azuloscuro);
+  padding: 0.5rem 1rem;
+  color: var(--azuloscuro);
+  border-radius: 5px;
+  font-family: 'Marcellus', serif;
+  font-size: 1rem;
+}
+
+menu{
+  margin-right: 0.5rem;
+
+/* seccion freatur 
+#texto2{
+  text-align:justify;
+  display: flex;
+
+  padding: 3rem;
+
+}
+.texto{
+  flex-basis: 70%;
+}
+
+.imagen2{
+  flex-basis: 30%;
+  text-align: center;
+}
+#features{
+  background-image:url(../Img/bg-features.png);
+  color: rgb(255, 255, 255);
+  padding-top: 1rem;
+}
+
+
+.features-description{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.features-title{
+  background-color: rgba(0,0,0,0.35);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5em;
+}
+
+.feature{
+  width: 25%;
+  min-width: 180px;
+  max-width: 230px;
+  margin: 0.8rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.feature-blue{
+  background-color: #00325eae;
+}
+
+.feature-black{
+  background-color: rgba(0,0,0,0.59);
+}
+
+.feature i{
+  font-size: 2.2em;
+  margin-bottom: 1.5rem;
+}
+*/
