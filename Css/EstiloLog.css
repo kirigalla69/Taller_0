@@ -1,131 +1,127 @@
-body {
+@import
+url('https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+:root{
     
-    background-image: url("../img/LOGIN/bg-login.png");
-    font-family: 'Overpass', sans-serif;
-    font-weight: normal;
-    font-size: 100%;
-    color: #1b262c;
-    margin: 0;
-   
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
 
-#contenedor {
+html{
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-image: url(../img/login/bg-login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
-    min-width: 100vw;
-    min-height: 100vh;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+
+#form{
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    align-items: center;
+    margin: auto;
+    border-radius: 3px;
+    font-size: 18px;
+    background-color: rgba(55, 119, 172, 0.8);
+}
+
+.vector{
     width: 100%;
-    height: 100%;
 }
 
-#central {
-    max-width: 320px;
-    width: 100%;
+.logo{
+    margin-top: -120px;
+    padding: 20px;
+    display: flex;
+    float: left;
+    margin-right: 50%;
+    width: 200px;
+
 }
 
-.titulo {
-    font-size: 250%;
-    color:#bbe1fa;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#login {
-    width: 100%;
-    padding: 50px 30px;
-    background-color: #3282b8;
-    
-    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    
-    box-sizing: border-box;
-}
-
-#login input {
-    font-family: 'Overpass', sans-serif;
-    font-size: 110%;
-    color: #1b262c;
-    
-    display: block;
-    width: 100%;
-    height: 40px;
-    
-    margin-bottom: 10px;
-    padding: 5px 5px 5px 10px;
-    
-    box-sizing: border-box;
-    
-    border: none;
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-}
-
-#login input::placeholder {
-    font-family: 'Overpass', sans-serif;
-    color: #E4E4E4;
-}
-
-#login button {
-    font-family: 'Overpass', sans-serif;
-    font-size: 110%;
-    color:#1b262c;
-    width: 100%;
-    height: 40px;
-    border: none;
-    
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    
-    background-color: #bbe1fa;
-    
-    margin-top: 10px;
-}
-
-#login button:hover {
-    background-color: #0f4c75;
-    color:#bbe1fa;
-}
-
-.pie-form {
-    font-size: 90%;
-    text-align: center;    
-    margin-top: 15px;
-}
-
-.pie-form a {
-    display: block;
+.icon{
     text-decoration: none;
-    color: #bbe1fa;
-    margin-bottom: 3px;
-}
-
-.pie-form a:hover {
-    color: #0f4c75;
-}
-
-.inferior {
-    margin-top: 10px;
-    font-size: 90%;
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
     text-align: center;
+    background-color: #9C2759;
+    color: #fff;
+    border-radius: 50%;
+
 }
 
-.inferior a {
-    display: block;
+.box{
+    box-shadow: 1px 1px 1px #0B3860;
+    float: inline-start;
+    height: 30px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: #fff;
+}
+
+#form label{
+    width: 70%;
+    margin-top: 20px;
+}
+#submit{
+    margin-top: 45px;
+    width: 70%;
+    height: 30px;
+    background-color: var(--negro2);
+    color: #fff;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+#form p{
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#form a{
+    color: #000;
     text-decoration: none;
-    color: #bbe1fa;
-    margin-bottom: 3px;
 }
 
-.inferior a:hover {
-    color: #3282b8;
-} 
+@media screen and (min-width: 1024px){
+
+    #form p{
+        display: block;
+    }
+}
+
